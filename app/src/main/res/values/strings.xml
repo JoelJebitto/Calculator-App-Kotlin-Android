@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calculator App</string>
+    <string name="_7">7</string>
+    <string name="_9">9</string>
+    <string name="_8">8</string>
+    <string name="_Div">/</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_Multiply">*</string>
+    <string name="_1">1</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="_Sub">-</string>
+    <string name="_Decimal">.</string>
+    <string name="_0">0</string>
+    <string name="_Add">+</string>
+    <string name="_Equal">=</string>
+    <string name="_Clear">CLEAR</string>
+    <string name="_6">6</string>
+</resources>
