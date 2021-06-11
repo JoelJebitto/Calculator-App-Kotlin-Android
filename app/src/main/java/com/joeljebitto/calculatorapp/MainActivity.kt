@@ -39,9 +39,16 @@ class MainActivity : AppCompatActivity() {
 
     fun onEqual(view: View) {
         if (lastNumeric) {
-            var tvValue = tvInput.text.toString()
+            val tvValue = tvInput.text.toString()
             try {
+                if (tvValue.contains("-")){
+                    val splitValue = tvValue.split("-")
 
+                    val one = splitValue[0].toInt()
+                    val two = splitValue[1].toInt()
+
+                    tvInput.text = (one - two).toString()
+                }
             }catch (e :ArithmeticException){
                 e.printStackTrace()
             }
