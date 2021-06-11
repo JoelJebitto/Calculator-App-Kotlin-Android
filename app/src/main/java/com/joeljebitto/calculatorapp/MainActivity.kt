@@ -41,15 +41,18 @@ class MainActivity : AppCompatActivity() {
         if (lastNumeric) {
             val tvValue = tvInput.text.toString()
             try {
-                if (tvValue.contains("-")){
+                if (tvValue.contains("-")) {
                     val splitValue = tvValue.split("-")
-
                     val one = splitValue[0].toInt()
                     val two = splitValue[1].toInt()
-
                     tvInput.text = (one - two).toString()
+                } else if (tvValue.contains("+")) {
+                    val splitValue = tvValue.split("+")
+                    val one = splitValue[0].toInt()
+                    val two = splitValue[1].toInt()
+                    tvInput.text = (one + two).toString()
                 }
-            }catch (e :ArithmeticException){
+            } catch (e: ArithmeticException) {
                 e.printStackTrace()
             }
         }
