@@ -37,6 +37,17 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun onEqual(view: View) {
+        if (lastNumeric) {
+            var tvValue = tvInput.text.toString()
+            try {
+
+            }catch (e :ArithmeticException){
+                e.printStackTrace()
+            }
+        }
+    }
+
     fun onOperator(view: View) {
         if (lastNumeric && !isOperatorAdded(tvInput.text.toString())) {
             tvInput.append((view as Button).text)
