@@ -51,6 +51,11 @@ class MainActivity : AppCompatActivity() {
                     val one = splitValue[0].toInt()
                     val two = splitValue[1].toInt()
                     tvInput.text = (one + two).toString()
+                } else if (tvValue.contains("*")) {
+                    val splitValue = tvValue.split("*")
+                    val one = splitValue[0].toInt()
+                    val two = splitValue[1].toInt()
+                    tvInput.text = (one * two).toString()
                 }
             } catch (e: ArithmeticException) {
                 e.printStackTrace()
