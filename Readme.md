@@ -1,4 +1,4 @@
-## [See Output](https://github.com/JoeJebitto/Calculator-App-Kotlin-Android)
+## [See Output](https://github.com/JoeJebitto/Android-Kotlin/blob/main/Calculator/README.md)
 
 ## This Project Is Made Using
 
